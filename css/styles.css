@@ -21,7 +21,7 @@ img {
   --primary: #121212;
   --secondary: #e7e7e7;
   --detail: #e1d2c3;
-  --accent: #d1ad88;
+  --accent: #7a5240;
   --pixelify: "Pixelify Sans", sans-serif;
 }
 
@@ -52,6 +52,10 @@ body {
   background-position: center;
 }
 
+.bg-detail {
+  background-color: var(--detail);
+}
+
 .h-50vh {
   height: 50dvh;
 }
@@ -60,11 +64,29 @@ body {
   max-width: 600px;
 }
 
+.max-w-lg {
+  max-width: 800px;
+}
+
 .max-w-xl {
   max-width: 1000px;
+}
+
+.w-100px {
+  width: 100px;
+}
+
+.opacity-75 {
+  opacity: 75%;
 }
 
 #welcome span {
   font-family: var(--pixelify);
   background: var(--detail);
+}
+
+@media screen and (max-width: 640px) {
+  .logo-nav {
+    width: 200px;
+  }
 }
