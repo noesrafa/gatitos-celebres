@@ -21,7 +21,7 @@ img {
   --primary: #121212;
   --secondary: #e7e7e7;
   --detail: #e1d2c3;
-  --accent: #7e23ff;
+  --accent: #d1ad88;
   --pixelify: "Pixelify Sans", sans-serif;
 }
 
@@ -44,4 +44,27 @@ body {
 .btn-black:hover {
   background-color: var(--secondary);
   border: 1px solid var(--primary);
+}
+
+.bg-home-background {
+  background: url(/assets/home_bg.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.h-50vh {
+  height: 50dvh;
+}
+
+.max-w-md {
+  max-width: 600px;
+}
+
+.max-w-xl {
+  max-width: 1000px;
+}
+
+#welcome span {
+  font-family: var(--pixelify);
+  background: var(--detail);
 }

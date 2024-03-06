@@ -21,32 +21,8 @@
   </head>
   <body>
     <header class="hero">
-      <!-- <nav class="fixed-top p-2">
-        <div
-          class="d-flex flex-column flex-md-row bg-white justify-content-between px-1 px-sm-3 py-2 align-items-center border-black rounded"
-        >
-          <a href="./index.html" class="nav_logo">
-            <img src="./assets/logo.svg" alt="logo" />
-          </a>
-          <ul class="nav justify-content-center py-2">
-            <li class="mx-4">
-              <a href="./index.html" class="active">Inicio</a>
-            </li>
-            <li class="mx-4">
-              <a href="./pages/gallery.html">Galería</a>
-            </li>
-            <li class="mx-4">
-              <a href="./pages/curiosities.html">Curiosidades</a>
-            </li>
-            <li class="mx-4">
-              <a href="./pages/about_us.html">Nosotros</a>
-            </li>
-          </ul>
-          <a class="btn btn-black" href="./pages/adopt.html">Adopta</a>
-        </div>
-      </nav> -->
       <nav class="fixed-top p-2">
-        <div class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <div class="navbar navbar-expand-lg navbar-light bg-light rounded border-black">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"
               ><img src="./assets/logo.svg" alt="logo"
@@ -92,20 +68,21 @@
     </header>
 
     <main class="page">
-      <section class="vw-100 position-relative">
-        <img
-          src="/assets/home_bg.webp"
-          alt="home-background"
-          class="vw-100 vh-100"
-        />
-        <h2
-          class="position-absolute bottom-0 w-100 text-white text-center py-4"
+      <section
+        class="position-relative vh-100 bg-home-background d-flex justify-content-center align-items-center text-center text-white"
+      >
+        <div">
+          <img src="/assets/logo_white.svg" alt="logo">
+          <p class="mt-2 fs-5">La mejor página sobre gatitos</p>
+        </div>
+        <h3
+          class="position-absolute bottom-0 start-0 w-100 text-white text-center py-4"
         >
           Haz scroll<i class="ph ph-arrow-fat-lines-down mx-2"></i>
-        </h2>
+        </h3>
       </section>
-      <section class="description">
-        <p class="description_text">
+      <section id="welcome" class="container-sm h-50vh text-center d-flex align-items-center">
+        <p class="max-w-md mx-auto fs-4">
           Descubre las historias detrás de gatos famosos como
           <span>Grumpy Cat y Maru.</span> Explora el encanto de estos felinos
           adorables que han dejado una huella duradera. ¡Bienvenido al
@@ -113,15 +90,15 @@
         </p>
       </section>
 
-      <section class="categories">
-        <div class="category">
-          <p class="category_text">
+      <section class="w-full max-w-xl mx-auto px-2">
+        <div class="category bg-white border-black rounded mt-4">
+          <p class="fs-2 fs-md-6 p-4">
             Grumpy Cat, cuyo nombre real era Tardar Sauce, fue un gato doméstico
             conocido por su apariencia facial única que daba la impresión de
             estar constantemente enfadado o malhumorado.
           </p>
           <iframe
-            class="category_video"
+            class="w-100"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/INscMGmhmX4?si=O2JtnXEnXjqo4_qH"
@@ -131,7 +108,41 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="category">
+        
+        <div class="category bg-white border-black rounded mt-4">
+          <p class="fs-2 fs-md-6 p-4">
+            Salem es el gato de Sabrina Spellman, la protagonista de la historia, quien es una joven mitad bruja y mitad mortal. En la serie de televisión de los años 90, Salem es presentado como un gato parlante que fue una vez un brujo poderoso.
+          </p>
+          <iframe
+            class="w-100"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ebtVlQKhbr4?si=UZ8G7bmkGIelaFWE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="category bg-white border-black rounded mt-4">
+          <p class="fs-2 fs-md-6 p-4">
+            Nyan Cat es un meme animado de un gato con cuerpo de Pop-Tart que
+            vuela a través del espacio dejando un arco iris detrás de él. Se
+            hizo extremadamente popular en internet.
+          </p>
+          <iframe
+            class="w-100"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zqLEO5tIuYs?si=YyO2odGKbuX3MwRw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <!-- <div class="category">
           <p class="category_text">
             Nyan Cat es un meme animado de un gato con cuerpo de Pop-Tart que
             vuela a través del espacio dejando un arco iris detrás de él. Se
@@ -164,7 +175,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-        </div>
+        </div> -->
       </section>
 
       <div class="tag">
