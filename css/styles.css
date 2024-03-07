@@ -57,7 +57,7 @@ body {
 }
 
 .bg-home-background {
-  background: url(/assets/home_bg.webp);
+  background: url(./assets/home_bg.webp);
   background-size: cover;
   background-position: center;
 }
