@@ -46,6 +46,16 @@ body {
   border: 1px solid var(--primary);
 }
 
+.btn-brown {
+  background-color: var(--detail);
+  color: var(--primary);
+  transition: 200ms;
+}
+.btn-brown:hover {
+  background-color: var(--secondary);
+  border: 1px solid var(--primary);
+}
+
 .bg-home-background {
   background: url(/assets/home_bg.webp);
   background-size: cover;
@@ -58,6 +68,10 @@ body {
 
 .h-50vh {
   height: 50dvh;
+}
+
+.min-h-100vh {
+  min-height: 100vh;
 }
 
 .max-w-md {
@@ -96,6 +110,9 @@ body {
 @media screen and (max-width: 990px) {
   .-mt-xl-5 {
     margin-top: 0;
+  }
+  .min-h-100vh {
+    min-height: 0;
   }
 }
 
