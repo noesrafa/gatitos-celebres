@@ -102,6 +102,10 @@ body {
   margin-top: -150px;
 }
 
+.rounded-full {
+  border-radius: 1000px;
+}
+
 #welcome span {
   font-family: var(--pixelify);
   background: var(--detail);
