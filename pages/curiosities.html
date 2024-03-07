@@ -1,117 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../favicon.png" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.png" type="image/x-icon" />
     <title>Gatitos Célebres</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap"
       rel="stylesheet"
-    >
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-    >
+    />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav_wrapper">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./gallery.html">Galería</a></li>
-          <li><a href="./curiosities.html" class="active">Curiosidades</a></li>
-          <li><a href="./about_us.html">Nosotros</a></li>
-        </ul>
-        <a href="../index.html" class="nav_logo">
-          <img src="../assets/logo.svg" alt="logo">
-        </a>
-        <a class="nav_button" href="./adopt.html">Adopta</a>
-      </div>
-    </nav>
-
-    <header class="curiosities_header">
-      <h1>Curiosidades</h1>
-      <p>Encuentra las curiosidades más cool de gatitos</p>
-    </header>
-
-    <main class="page">
-      <section class="curiosities_container">
-        <div class="curiosities">
-          <figure class="curiosity_item item_1">
-            <img src="../assets/home_bg.webp" alt="cat">
-            <figcaption>
-              <p>Mona Cat</p>
-              <p>
-                A pesar de su expresión facial gruñona, Mona Cat, también
-                conocida como Tardar Sauce, tenía un temperamento amigable y
-                cariñoso en la vida real.
-              </p>
-            </figcaption>
-          </figure>
-          <figure class="curiosity_item item_2">
-            <img src="../assets/home_bg.webp" alt="cat" />
-            <figcaption>
-              <p>Mona Cat</p>
-              <p>
-                A pesar de su expresión facial gruñona, Mona Cat, también
-                conocida como Tardar Sauce, tenía un temperamento amigable y
-                cariñoso en la vida real.
-              </p>
-            </figcaption>
-          </figure>
-          <figure class="curiosity_item item_3">
-            <img src="../assets/home_bg.webp" alt="cat">
-            <figcaption>
-              <p>Mona Cat</p>
-              <p>
-                A pesar de su expresión facial gruñona, Mona Cat, también
-                conocida como Tardar Sauce, tenía un temperamento amigable y
-                cariñoso en la vida real.
-              </p>
-            </figcaption>
-          </figure>
-          <figure class="curiosity_item item_4">
-            <img src="../assets/home_bg.webp" alt="cat">
-            <figcaption>
-              <p>Mona Cat</p>
-              <p>
-                A pesar de su expresión facial gruñona, Mona Cat, también
-                conocida como Tardar Sauce, tenía un temperamento amigable y
-                cariñoso en la vida real.
-              </p>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <nav class="footer_menu">
-        <h6 class="footer_title">Explora nuestras secciones</h6>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./gallery.html">Galería</a></li>
-          <li><a href="./curiosities.html">Curiosidades</a></li>
-          <li><a href="./about_us.html">Nosotros</a></li>
-          <li><a href="./adopt.html">Adopta</a></li>
-        </ul>
-      </nav>
-      <div class="footer_bottom">
-        <img src="../assets/logo.svg" alt="logo" class="footer_logo">
-        <div class="footer_social">
-          <span>© 2024 Gatitos Célebres</span>
-          <div class="footer_social_links">
-            <img src="../assets/facebook.svg" alt="facebook">
-            <img src="../assets/twitter.svg" alt="twitter">
-            <img src="../assets/instagram.svg" alt="instagram">
+    <header class="hero">
+      <nav class="fixed-top p-2">
+        <div
+          class="navbar navbar-expand-lg navbar-light bg-light rounded border-black"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"
+              ><img src="../assets/logo.svg" alt="logo" class="logo-nav"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="curiosities.html"
+                    >Curiosidades</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about_us.html">Nosotros</a>
+                </li>
+              </ul>
+              <a class="btn btn-black" href="adopt.html">Adopta</a>
+            </div>
           </div>
         </div>
+      </nav>
+    </header>
+
+    <main class="page mt-10 px-3">
+      <div class="text-center">
+        <h1>Curiosidades sobre gatos</h1>
+        <p>Encuentra una gran variedad de cosas interesantes</p>
       </div>
-    </footer>
+      <div class="max-w-xl mx-auto">
+
+        <div class="mt-5 d-flex">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img
+              src="https://media.wired.com/photos/5cdefc28b2569892c06b2ae4/master/w_2560%2Cc_limit/Culture-Grumpy-Cat-487386121-2.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Un gato pensativo"
+            />
+            <div class="px-3">
+              <h4>Grumpy Cat</h4>
+              <p>
+                A pesar de su expresión facial gruñona, Grumpy Cat, también
+                conocida como Tardar Sauce, tenía un temperamento amigable y
+                cariñoso en la vida real.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6"></div>
+        </div>
+
+        <div class="-mt-xl-5 d-flex">
+          <div class="col-lg-6"></div>
+          <div class="col-lg-6 mb-4 mb-lg-0 text-lg-end">
+            <img
+              src="https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy80MTQzMzA4L29yaWdpbi5qcGciLCJleHBpcmVzX2F0IjoxNzMyMDA4NzY3fQ.R_Z9Rnu93wxzwc3xQ6Tnc_EKW4H3HNfD6gLE7vOz7Vw/img.jpg?width=742&quality=85"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Un gato pensativo"
+            />
+            <div class="px-3">
+              <h4>Maru</h4>
+              <p>
+                Maru, el gato japonés famoso por su amor por las cajas, ha
+                acumulado más de 300 millones de visitas en YouTube y es
+                considerado uno de los gatos más populares en línea.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="-mt-xl-5 d-flex">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img
+              src="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/81521d5e-378d-47d9-86db-1d2efe0abaa2/width=450/00024-346102625.jpeg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Un gato pensativo"
+            />
+            <div class="px-3">
+              <h4>Salem Saberhagen</h4>
+              <p>
+                Salem, el gato negro parlante de "Sabrina, la bruja adolescente", fue interpretado por varios gatos diferentes en la serie. Algunos de ellos eran animatrónicos.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6"></div>
+        </div>
+
+        <div class="-mt-xl-5 d-flex">
+          <div class="col-lg-6"></div>
+          <div class="col-lg-6 mb-4 mb-lg-0 text-lg-end">
+            <img
+              src="https://media1.s-nbcnews.com/i/streams/2013/August/130828/8C8767446-tdy-130828-colonel-meow-tease.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Un gato pensativo"
+            />
+            <div class="px-3">
+              <h4>Colonel meow</h4>
+              <p>
+                El gato persa de pelo largo, Colonel Meow, obtuvo el récord Guinness por tener el pelaje más largo. Además de su aspecto llamativo, también tenía una cuenta en redes sociales con miles de seguidores.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <div class="container mt-5">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-muted mx-auto">
+          © 2022 Gatitos Celébres, Corp.
+        </p>
+
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none mx-auto pt-3 pt-sm-0"
+        >
+          <img src="../assets/logo.svg" alt="logo" />
+        </a>
+
+        <ul
+          class="nav col-md-4 justify-content-end d-flex justify-content-center"
+        >
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link px-2 text-muted">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="./gallery.html" class="nav-link px-2 text-muted"
+              >Galería</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./curiosities.html" class="nav-link px-2 text-muted"
+              >Curiosidades</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./about_us.html" class="nav-link px-2 text-muted"
+              >Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./adopt.html" class="nav-link px-2 text-muted">Adopta</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>

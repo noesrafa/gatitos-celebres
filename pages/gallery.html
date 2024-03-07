@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../favicon.png" type="image/x-icon" />
     <title>Gatitos Célebres</title>
-    <link rel="stylesheet" href="../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,99 +16,161 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav_wrapper">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./gallery.html" class="active">Galería</a></li>
-          <li><a href="./curiosities.html">Curiosidades</a></li>
-          <li><a href="./about_us.html">Nosotros</a></li>
-        </ul>
-        <a href="../index.html" class="nav_logo">
-          <img src="../assets/logo.svg" alt="logo" />
-        </a>
-        <a class="nav_button" href="./adopt.html">Adopta</a>
-      </div>
-    </nav>
-
-    <header class="gallery_header">
-      <h1 class="gallery_title">Galería</h1>
-      <p>Las mejores fotos de gatitos lindos</p>
-    </header>
-
-    <main class="page">
-      <section class="gallery_container">
-        <div class="gallery">
-          <figure class="gallery_item">
-            <img
-              class="slider_image"
-              src="https://media.discordapp.net/attachments/1201943001048559627/1205011222483836938/rafael_09993_Oil_painting_of_a_funny_cat__dressed_as_Girl_with__a6e7c3ef-42b9-4a23-9512-30ed1280924f.png?ex=65d6d127&is=65c45c27&hm=d19ac4ffc3822b468b20d4059d38ce9f9ada156f511741a74a6f7d2189388b98&=&format=webp&quality=lossless&width=639&height=639"
+    <header class="hero">
+      <nav class="fixed-top p-2">
+        <div
+          class="navbar navbar-expand-lg navbar-light bg-light rounded border-black"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"
+              ><img src="../assets/logo.svg" alt="logo" class="logo-nav"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-            <figcaption>Cat with a Pearl Earring</figcaption>
-          </figure>
-          <figure class="gallery_item">
-            <img
-              class="slider_image"
-              src="https://media.discordapp.net/attachments/1201943001048559627/1205011222483836938/rafael_09993_Oil_painting_of_a_funny_cat__dressed_as_Girl_with__a6e7c3ef-42b9-4a23-9512-30ed1280924f.png?ex=65d6d127&is=65c45c27&hm=d19ac4ffc3822b468b20d4059d38ce9f9ada156f511741a74a6f7d2189388b98&=&format=webp&quality=lossless&width=639&height=639"
-            >
-            <figcaption>Cat with a Pearl Earring</figcaption>
-          </figure>
-          <figure class="gallery_item">
-            <img
-              class="slider_image"
-              src="https://media.discordapp.net/attachments/1201943001048559627/1205011222483836938/rafael_09993_Oil_painting_of_a_funny_cat__dressed_as_Girl_with__a6e7c3ef-42b9-4a23-9512-30ed1280924f.png?ex=65d6d127&is=65c45c27&hm=d19ac4ffc3822b468b20d4059d38ce9f9ada156f511741a74a6f7d2189388b98&=&format=webp&quality=lossless&width=639&height=639"
-            >
-            <figcaption>Cat with a Pearl Earring</figcaption>
-          </figure>
-          <figure class="gallery_item">
-            <img
-              class="slider_image"
-              src="https://media.discordapp.net/attachments/1201943001048559627/1205011222483836938/rafael_09993_Oil_painting_of_a_funny_cat__dressed_as_Girl_with__a6e7c3ef-42b9-4a23-9512-30ed1280924f.png?ex=65d6d127&is=65c45c27&hm=d19ac4ffc3822b468b20d4059d38ce9f9ada156f511741a74a6f7d2189388b98&=&format=webp&quality=lossless&width=639&height=639"
-            >
-            <figcaption>Cat with a Pearl Earring</figcaption>
-          </figure>
-          <figure class="gallery_item">
-            <img
-              class="slider_image"
-              src="https://media.discordapp.net/attachments/1201943001048559627/1205011222483836938/rafael_09993_Oil_painting_of_a_funny_cat__dressed_as_Girl_with__a6e7c3ef-42b9-4a23-9512-30ed1280924f.png?ex=65d6d127&is=65c45c27&hm=d19ac4ffc3822b468b20d4059d38ce9f9ada156f511741a74a6f7d2189388b98&=&format=webp&quality=lossless&width=639&height=639"
-            >
-            <figcaption>Cat with a Pearl Earring</figcaption>
-          </figure>
-          <figure class="gallery_item">
-            <img
-              class="slider_image"
-              src="https://media.discordapp.net/attachments/1201943001048559627/1205011222483836938/rafael_09993_Oil_painting_of_a_funny_cat__dressed_as_Girl_with__a6e7c3ef-42b9-4a23-9512-30ed1280924f.png?ex=65d6d127&is=65c45c27&hm=d19ac4ffc3822b468b20d4059d38ce9f9ada156f511741a74a6f7d2189388b98&=&format=webp&quality=lossless&width=639&height=639"
-            >
-            <figcaption>Cat with a Pearl Earring</figcaption>
-          </figure>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <nav class="footer_menu">
-        <h6 class="footer_title">Explora nuestras secciones</h6>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./gallery.html">Galería</a></li>
-          <li><a href="./curiosities.html">Curiosidades</a></li>
-          <li><a href="./about_us.html">Nosotros</a></li>
-          <li><a href="./adopt.html">Adopta</a></li>
-        </ul>
-      </nav>
-      <div class="footer_bottom">
-        <img src="../assets/logo.svg" alt="logo" class="footer_logo">
-        <div class="footer_social">
-          <span>© 2024 Gatitos Célebres</span>
-          <div class="footer_social_links">
-            <img src="../assets/facebook.svg" alt="facebook">
-            <img src="../assets/twitter.svg" alt="twitter">
-            <img src="../assets/instagram.svg" alt="instagram">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="gallery.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="curiosities.html">Curiosidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about_us.html">Nosotros</a>
+                </li>
+              </ul>
+              <a class="btn btn-black" href="adopt.html">Adopta</a>
+            </div>
           </div>
         </div>
+      </nav>
+    </header>
+
+    <main class="page mt-10 px-3 text-center">
+      <h1>Galería de gatos famosos</h1>
+      <p>Cuadros pintados por gatos muy talentosos</p>
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img
+            src="https://cdn.midjourney.com/e5d198f0-f7cc-402b-a7f8-2d2104b98b07/0_0.webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Pintura de gato famoso"
+          />
+
+          <img
+            src="https://cdn.midjourney.com/f47c9adc-b411-490a-95a2-58a9ff982782/0_0.webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Gato endemoniado"
+          />
+
+          <img
+            src="https://cdn.midjourney.com/407280ec-a78d-4943-8d7f-421f31fbb7d4/0_2.webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Pintura de gato famoso"
+          />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="https://cdn.midjourney.com/42311e13-6bb9-4320-bd5f-bd8220796ac9/0_2.webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="gato gritando"
+          />
+
+          <img
+            src="https://cdn.midjourney.com/2f0d6c68-cc58-43ca-893e-c8da3eed9407/0_2.webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Gato oppenheimer"
+          />
+          <img
+            src="https://cdn.midjourney.com/27dadb39-123e-45e5-8ac6-cd33111cb284/0_3.webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Gato anatomico"
+          />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img
+            src="https://cdn.midjourney.com/fec3a149-161e-406f-93d1-3ddfe81fdcf6/0_3.webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Un gato pensativo"
+          />
+
+          <img
+            src="https://cdn.midjourney.com/85250541-d2f8-469c-a342-3b7dd301dbf7/0_2.webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Gato fashion"
+          />
+
+          <img
+            src="https://cdn.midjourney.com/42992b7c-09c6-43d1-85c9-98a933661d45/0_1.webp"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Gato zodiacal"
+          />
+        </div>
       </div>
-    </footer>
+    </main>
+
+    <div class="container mt-5">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-muted mx-auto">
+          © 2022 Gatitos Celébres, Corp.
+        </p>
+
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none mx-auto pt-3 pt-sm-0"
+        >
+          <img src="../assets/logo.svg" alt="logo" />
+        </a>
+
+        <ul
+          class="nav col-md-4 justify-content-end d-flex justify-content-center"
+        >
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link px-2 text-muted">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="./gallery.html" class="nav-link px-2 text-muted"
+              >Galería</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./curiosities.html" class="nav-link px-2 text-muted"
+              >Curiosidades</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./about_us.html" class="nav-link px-2 text-muted"
+              >Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./adopt.html" class="nav-link px-2 text-muted">Adopta</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
