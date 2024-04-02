@@ -1,0 +1,15 @@
+{
+  "name": "gatitos-celebres",
+  "version": "1.0.0",
+  "description": "The best place on internet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch scss:css"
+  },
+  "author": "Rafael Tena Chaparro",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.72.0"
+  }
+}
