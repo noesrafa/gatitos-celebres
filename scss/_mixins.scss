@@ -1,0 +1,10 @@
+@mixin change-background($color) {
+  background-color: $color;
+}
+
+@mixin flex-justify-center($flex-direction, $gap: 0) {
+    display: flex;
+    justify-content: center;
+    gap: $gap;
+    flex-direction: $flex-direction;
+}

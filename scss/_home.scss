@@ -1,14 +1,29 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anim-fade-in {
+  animation: fadeIn 1s;
+}
+
 .bg-home-background {
   object-fit: cover;
 }
 
 .bg-detail {
-  background-color: $detail;
+  @include change-background($detail);
 }
 
 .rounded-b-5 {
-    border-bottom-left-radius: 5rem;
-    border-bottom-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
 }
 
 .border-black {
@@ -16,40 +31,40 @@
 }
 
 .btn-black {
-  background-color: $primary;
+  @include change-background($primary);
   color: $secondary;
   transition: 200ms;
 }
 .btn-black:hover {
-  background-color: $secondary;
+  @include change-background($secondary);
   border: 1px solid $primary;
 }
 
 .btn-brown {
-  background-color: $detail;
+  @include change-background($detail);
   color: $primary;
   transition: 200ms;
 }
 .btn-brown:hover {
-  background-color: $secondary;
+  @include change-background($secondary);
   border: 1px solid $primary;
 }
 
 .viral-video-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    width: fit-content;
-    img {
-        width: 32px;
-        height: 32px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: fit-content;
+  img {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 #welcome span {
   font-family: $pixelify;
-  background: $detail;
+  @include change-background($detail);
 }
 
 @media screen and (max-width: 640px) {

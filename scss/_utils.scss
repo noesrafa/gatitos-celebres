@@ -43,11 +43,11 @@
 }
 
 .opacity-50 {
-  opacity: 50%;
+  opacity: map-get($opacities , 50);
 }
 
 .opacity-75 {
-  opacity: 75%;
+    opacity: map-get($opacities , 75);
 }
 
 .mt-10 {
