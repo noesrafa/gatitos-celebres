@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../favicon.png" type="image/x-icon">
-    <title>Gatitos Célebres</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.png" type="image/x-icon" />
+    <title>Gatitos Célebres | Nosotros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap"
       rel="stylesheet"
@@ -17,83 +16,122 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav_wrapper">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./gallery.html">Galería</a></li>
-          <li><a href="./curiosities.html">Curiosidades</a></li>
-          <li><a href="./about_us.html" class="active">Nosotros</a></li>
-        </ul>
-        <a href="../index.html" class="nav_logo">
-          <img src="../assets/logo.svg" alt="logo">
-        </a>
-        <a class="nav_button" href="./adopt.html">Adopta</a>
-      </div>
-    </nav>
-
-    <header class="about_us">
-      <h1 class="about_us_title">
-        <span class="title_1">Todo sobre</span>
-        <span class="title_2"
-          ><span>gatitos</span>
-          <img
-            src="https://cdn.midjourney.com/11cbd967-759b-4ac3-ab5e-405f4206fa82/0_2.webp"
-          ><span>célebres</span></span
+    <header class="hero">
+      <nav class="fixed-top p-2">
+        <div
+          class="navbar navbar-expand-lg navbar-light bg-light rounded border-black"
         >
-        <span class="title_3">la página web</span>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"
+              ><img src="../assets/logo.svg" alt="logo" class="logo-nav"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="curiosities.html">Curiosidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="about_us.html">Nosotros</a>
+                </li>
+              </ul>
+              <a class="btn btn-brown rounded-full" href="adopt.html">Adopta</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page mt-10 px-3 text-center max-w-lg mx-auto">
+      <h1>
+        Todo sobre <br />
+        <b class="extrabold">gatitos célebres</b>
+        la página web
       </h1>
-      <p class="description">
+      <p class="mt-5 opacity-75">
         En Gatitos célebres, nos apasiona celebrar la majestuosidad y encanto de
         nuestros amigos felinos más queridos. Somos un equipo de amantes de los
         gatos que se ha unido para compartir historias fascinantes, anécdotas
         adorables y momentos destacados de los gatitos más célebres de todos los
         tiempos.
       </p>
-    </header>
-
-    <main class="page">
-      <hr>
-      <p>
+      <hr class="my-5" />
+      <p class="opacity-75">
         Nuestra misión es proporcionar un rincón virtual donde los amantes de
         los gatos puedan sumergirse en el fascinante mundo de los gatos
         célebres.
       </p>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/UwpJaz8MqDU?si=UVt7r4K9FG5C3788"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+      <img
+        src="https://cdn.midjourney.com/4c4bcdd8-c0ac-4134-ad6b-745b0e6db3d3/0_2.webp"
+        alt="la ultima cena gatuna"
+        class="w-100 vh-50vh rounded mt-5"
+      />
     </main>
 
-    <footer>
-      <nav class="footer_menu">
-        <h6 class="footer_title">Explora nuestras secciones</h6>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./gallery.html">Galería</a></li>
-          <li><a href="./curiosities.html">Curiosidades</a></li>
-          <li><a href="./about_us.html">Nosotros</a></li>
-          <li><a href="./adopt.html">Adopta</a></li>
+    <div class="container mt-5">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-muted mx-auto">
+          © 2022 Gatitos Celébres, Corp.
+        </p>
+
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none mx-auto pt-3 pt-sm-0"
+        >
+          <img src="../assets/logo.svg" alt="logo" />
+        </a>
+
+        <ul
+          class="nav col-md-4 justify-content-end d-flex justify-content-center"
+        >
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link px-2 text-muted">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="./gallery.html" class="nav-link px-2 text-muted"
+              >Galería</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./curiosities.html" class="nav-link px-2 text-muted"
+              >Curiosidades</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./about_us.html" class="nav-link px-2 text-muted"
+              >Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./adopt.html" class="nav-link px-2 text-muted">Adopta</a>
+          </li>
         </ul>
-      </nav>
-      <div class="footer_bottom">
-        <img src="../assets/logo.svg" alt="logo" class="footer_logo">
-        <div class="footer_social">
-          <span>© 2024 Gatitos Célebres</span>
-          <div class="footer_social_links">
-            <img src="../assets/facebook.svg" alt="facebook">
-            <img src="../assets/twitter.svg" alt="twitter">
-            <img src="../assets/instagram.svg" alt="instagram">
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>

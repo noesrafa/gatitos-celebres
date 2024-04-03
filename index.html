@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.png" type="image/x-icon" />
-    <title>Gatitos Célebres</title>
+    <title>Gatitos Célebres | Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,40 +16,18 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="hero">
-      <!-- <nav class="fixed-top p-2">
-        <div
-          class="d-flex flex-column flex-md-row bg-white justify-content-between px-1 px-sm-3 py-2 align-items-center border-black rounded"
-        >
-          <a href="./index.html" class="nav_logo">
-            <img src="./assets/logo.svg" alt="logo" />
-          </a>
-          <ul class="nav justify-content-center py-2">
-            <li class="mx-4">
-              <a href="./index.html" class="active">Inicio</a>
-            </li>
-            <li class="mx-4">
-              <a href="./pages/gallery.html">Galería</a>
-            </li>
-            <li class="mx-4">
-              <a href="./pages/curiosities.html">Curiosidades</a>
-            </li>
-            <li class="mx-4">
-              <a href="./pages/about_us.html">Nosotros</a>
-            </li>
-          </ul>
-          <a class="btn btn-black" href="./pages/adopt.html">Adopta</a>
-        </div>
-      </nav> -->
       <nav class="fixed-top p-2">
-        <div class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <div
+          class="navbar navbar-expand-lg navbar-light bg-light rounded border-black"
+        >
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"
-              ><img src="./assets/logo.svg" alt="logo"
+            <a class="navbar-brand" href="./index.html"
+              ><img src="./assets/logo.svg" alt="logo" class="logo-nav"
             /></a>
             <button
               class="navbar-toggler"
@@ -84,7 +62,9 @@
                   <a class="nav-link" href="./pages/about_us.html">Nosotros</a>
                 </li>
               </ul>
-              <a class="btn btn-black" href="./pages/adopt.html">Adopta</a>
+              <a class="btn btn-brown rounded-full" href="./pages/adopt.html"
+                >Adopta</a
+              >
             </div>
           </div>
         </div>
@@ -92,20 +72,29 @@
     </header>
 
     <main class="page">
-      <section class="vw-100 position-relative">
+      <section
+        class="position-relative h-75vh mb-5 overflow-hidden rounded-b-5 d-flex justify-content-center align-items-center text-center text-white"
+      >
         <img
-          src="/assets/home_bg.webp"
-          alt="home-background"
-          class="vw-100 vh-100"
+          src="./assets/home_bg.webp"
+          alt="gatito lisa"
+          class="bg-home-background position-absolute w-100 h-100vh anim-fade-in"
         />
-        <h2
-          class="position-absolute bottom-0 w-100 text-white text-center py-4"
+        <div class="z-index-10">
+          <img src="./assets/logo_white.svg" alt="logo" />
+          <p class="mt-2 fs-5">La mejor página sobre gatitos</p>
+        </div>
+        <h3
+          class="position-absolute bottom-0 start-0 w-100 text-white text-center py-4"
         >
-          Haz scroll<i class="ph ph-arrow-fat-lines-down mx-2"></i>
-        </h2>
+          Haz scroll<i class="ph ph-arrow-fat-lines-down ms-2"></i>
+        </h3>
       </section>
-      <section class="description">
-        <p class="description_text">
+      <section
+        id="welcome"
+        class="container-sm h-50vh text-center d-flex align-items-center"
+      >
+        <p class="max-w-md mx-auto fs-4">
           Descubre las historias detrás de gatos famosos como
           <span>Grumpy Cat y Maru.</span> Explora el encanto de estos felinos
           adorables que han dejado una huella duradera. ¡Bienvenido al
@@ -113,17 +102,18 @@
         </p>
       </section>
 
-      <section class="categories">
-        <div class="category">
-          <p class="category_text">
-            Grumpy Cat, cuyo nombre real era Tardar Sauce, fue un gato doméstico
-            conocido por su apariencia facial única que daba la impresión de
-            estar constantemente enfadado o malhumorado.
+      <section class="w-full max-w-xl mx-auto px-2">
+        <div class="category bg-white border-black rounded mt-4">
+          <h2 class="pt-4 ps-4"><b>Grumpy Cat</b></h2>
+          <p class="fs-4 fs-md-6 p-4">
+            Cuyo nombre real era Tardar Sauce, fue un gato doméstico conocido
+            por su apariencia facial única que daba la impresión de estar
+            constantemente enfadado o malhumorado.
           </p>
           <iframe
-            class="category_video"
+            class="w-100"
             width="560"
-            height="315"
+            height="600"
             src="https://www.youtube.com/embed/INscMGmhmX4?si=O2JtnXEnXjqo4_qH"
             title="YouTube video player"
             frameborder="0"
@@ -131,33 +121,19 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="category">
-          <p class="category_text">
-            Nyan Cat es un meme animado de un gato con cuerpo de Pop-Tart que
-            vuela a través del espacio dejando un arco iris detrás de él. Se
-            hizo extremadamente popular en internet.
+
+        <div class="category bg-white border-black rounded mt-4">
+          <h2 class="pt-4 ps-4"><b>Salem</b></h2>
+          <p class="fs-4 fs-md-6 p-4">
+            Es el gato de Sabrina Spellman, la protagonista de la historia,
+            quien es una joven mitad bruja y mitad mortal. En la serie de
+            televisión de los años 90, Salem es presentado como un gato parlante
+            que fue una vez un brujo poderoso.
           </p>
           <iframe
-            class="category_video"
+            class="w-100"
             width="560"
-            height="315"
-            src="https://www.youtube.com/embed/zqLEO5tIuYs?si=YyO2odGKbuX3MwRw"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="category">
-          <p class="category_text">
-            Nyan Cat es un meme animado de un gato con cuerpo de Pop-Tart que
-            vuela a través del espacio dejando un arco iris detrás de él. Se
-            hizo extremadamente popular en internet.
-          </p>
-          <iframe
-            class="category_video"
-            width="560"
-            height="315"
+            height="600"
             src="https://www.youtube.com/embed/ebtVlQKhbr4?si=UZ8G7bmkGIelaFWE"
             title="YouTube video player"
             frameborder="0"
@@ -165,85 +141,174 @@
             allowfullscreen
           ></iframe>
         </div>
-      </section>
 
-      <div class="tag">
-        <p>Gatitos célebres</p>
-        <img src="./assets/arrow.svg" alt="arrow" />
-        <p>Gatitos célebres</p>
-        <img src="./assets/arrow.svg" alt="arrow" />
-        <p>Gatitos célebres</p>
-      </div>
-
-      <section class="slider_container">
-        <div class="slider_info">
-          <h4>Autorretratos de gatos famosos</h4>
-          <span>1910 - 2024</span>
-        </div>
-        <div class="slider">
-          <img
-            class="slider_image"
-            src="https://media.discordapp.net/attachments/1201943001048559627/1205011222483836938/rafael_09993_Oil_painting_of_a_funny_cat__dressed_as_Girl_with__a6e7c3ef-42b9-4a23-9512-30ed1280924f.png?ex=65d6d127&is=65c45c27&hm=d19ac4ffc3822b468b20d4059d38ce9f9ada156f511741a74a6f7d2189388b98&=&format=webp&quality=lossless&width=639&height=639"
-          />
-          <img
-            class="slider_image"
-            src="https://media.discordapp.net/attachments/1201943001048559627/1205013720447717386/rafael_09993_Oil_painting_of_a_funny_cat__dressed_as_The_birth__c7be418f-b35f-4c2a-b2a2-c1cc45b50109.png?ex=65d6d37b&is=65c45e7b&hm=dc8ade4ceff55a3de04b08dbef11dbdee5e1ac3a56a10b9802fe364cc61d72c1&=&format=webp&quality=lossless&width=639&height=639"
-          />
-          <img
-            class="slider_image"
-            src="https://media.discordapp.net/attachments/1201943001048559627/1205014604380639282/rafael_09993_Oil_painting_of_a_funny_cat__dressed_as_The_Son_of_17e6e7e7-158c-4fc7-a5dd-9d869ff96084.png?ex=65d6d44d&is=65c45f4d&hm=22352028cf4a066908ffd9424019fe809e2d0d5060802671bdba27f236347d0c&=&format=webp&quality=lossless&width=639&height=639"
-          />
-        </div>
-      </section>
-
-      <section class="viral_videos">
-        <h6>Videos virales</h6>
-        <div class="divider"></div>
-        <button>Grumpy Cat</button>
-        <div class="divider"></div>
-        <button>
-          <span>God</span
-          ><img
+        <div class="category bg-white border-black rounded mt-4">
+          <h2 class="pt-4 ps-4"><b>Nyan Cat</b></h2>
+          <p class="fs-4 fs-md-6 p-4">
+            Es un meme animado de un gato con cuerpo de Pop-Tart que vuela a
+            través del espacio dejando un arco iris detrás de él. Se hizo
+            extremadamente popular en internet.
+          </p>
+          <iframe
             class="w-100"
+            width="560"
+            height="600"
+            src="https://www.youtube.com/embed/zqLEO5tIuYs?si=YyO2odGKbuX3MwRw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="d-flex align-items-center w-100 my-5">
+        <div
+          class="w-100 bg-detail d-flex align-items-center justify-content-center py-4 mt-4 gap-4 overflow-hidden text-center mb-4"
+        >
+          <p class="fs-3 mb-0">Gatitos célebres</p>
+          <img src="./assets/arrow.svg" alt="arrow" />
+          <p class="fs-3 mb-0">Gatitos célebres</p>
+          <img src="./assets/arrow.svg" alt="arrow" />
+          <p class="fs-3 mb-0">Gatitos célebres</p>
+        </div>
+      </section>
+
+      <section class="max-w-xl mx-auto pb-5">
+        <div>
+          <h4 class="mb-4 text-center">Autorretratos de gatos famosos</h4>
+        </div>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide max-w-xl mx-auto"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://cdn.midjourney.com/42992b7c-09c6-43d1-85c9-98a933661d45/0_1.webp"
+                class="d-block w-100 h-50vh"
+                alt="gato bonito"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn.midjourney.com/c5ebbf3c-51ac-4158-8347-cc3494e2e046/0_0.webp"
+                class="d-block w-100 h-50vh"
+                alt="gato bostezando"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn.midjourney.com/81a4da55-4aca-43ac-a4ae-282af763b08f/0_1.webp"
+                class="d-block w-100 h-50vh"
+                alt="gato pintura"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="mx-auto mt-5 text-center pb-5">
+        <h3 class="opacity-75">Videos virales</h3>
+        <hr />
+        <a
+          href="https://youtu.be/xSE9Qk9wkig?feature=shared"
+          target="_blank"
+          class="fs-1 w-100 viral-video-link"
+          ><span class="fs-4 opacity-50 flex align-items-center"
+            >Ver<img src="./assets/play.svg"
+          /></span>
+          Keyboard Cat
+        </a>
+        <hr />
+        <a
+          href="https://www.youtube.com/watch?v=1MQwPQLR03g&vl=en"
+          target="_blank"
+          class="fs-1 w-100 d-flex gap-1 align-items-center justify-content-center viral-video-link"
+          ><span class="fs-4 opacity-50 flex align-items-center"
+            >Ver<img src="./assets/play.svg"
+          /></span>
+          <span>Choupette </span
+          ><img
+            class="w-100px"
             src="https://cdn.midjourney.com/11cbd967-759b-4ac3-ab5e-405f4206fa82/0_2.webp"
-          /><span>Cat</span>
-        </button>
-        <div class="divider"></div>
-        <button>Salem Saberhagen</button>
+          /><span>Lagerfeld</span>
+        </a>
+        <hr />
+        <a
+          href="https://www.youtube.com/watch?v=wx5Of3X-VJw&pp=ygUTSGVucmksIGxlIENoYXQgTm9pcg%3D%3D"
+          target="_blank"
+          class="fs-1 w-100 viral-video-link"
+          ><span class="fs-4 opacity-50 flex align-items-center"
+            >Ver<img src="./assets/play.svg" /></span
+          >Henri LeChatNoir</a
+        >
       </section>
     </main>
 
-    <footer>
-      <nav class="footer_menu">
-        <h6 class="footer_title">Explora nuestras secciones</h6>
-        <ul>
-          <li><a class="footer_link" href="./index.html">Inicio</a></li>
-          <li>
-            <a class="footer_link" href="./pages/gallery.html">Galería</a>
+    <div class="container mt-5">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-muted mx-auto">
+          © 2022 Gatitos Celébres, Corp.
+        </p>
+
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none mx-auto pt-3 pt-sm-0"
+        >
+          <img src="./assets/logo.svg" alt="logo" />
+        </a>
+
+        <ul
+          class="nav col-md-4 justify-content-end d-flex justify-content-center"
+        >
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link px-2 text-muted">Inicio</a>
           </li>
-          <li>
-            <a class="footer_link" href="./pages/curiosities.html"
+          <li class="nav-item">
+            <a href="./pages/gallery.html" class="nav-link px-2 text-muted"
+              >Galería</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./pages/curiosities.html" class="nav-link px-2 text-muted"
               >Curiosidades</a
             >
           </li>
-          <li>
-            <a class="footer_link" href="./pages/about_us.html">Nosotros</a>
+          <li class="nav-item">
+            <a href="./pages/about_us.html" class="nav-link px-2 text-muted"
+              >Nosotros</a
+            >
           </li>
-          <li><a class="footer_link" href="./pages/adopt.html">Adopta</a></li>
+          <li class="nav-item">
+            <a href="./pages/adopt.html" class="nav-link px-2 text-muted"
+              >Adopta</a
+            >
+          </li>
         </ul>
-      </nav>
-      <div class="footer_bottom">
-        <img src="./assets/logo.svg" alt="logo" class="footer_logo" />
-        <div class="footer_social">
-          <span>© 2024 Gatitos Célebres</span>
-          <div class="footer_social_links">
-            <img src="./assets/facebook.svg" alt="facebook" />
-            <img src="./assets/twitter.svg" alt="twitter" />
-            <img src="./assets/instagram.svg" alt="instagram" />
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="/js/bootstrap.min.js"></script>
+      </footer>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
